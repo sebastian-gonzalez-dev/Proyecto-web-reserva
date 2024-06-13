@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="d-flex flex-column justify-content-center align-items-center mt-4">
+    <div class="">
+        <h1 class="text-center mt-4">PERFIL USUARIO: {{user.username.upper}}</h1>
+    <p class=""><strong>Nombre usuario:</strong> {{user.username.upper}}</p>
+    <p class=""><strong>Nombre:</strong> {{user.firstname.upper}}</p>
+    <p class=""><strong>Apellido:</strong> {{user.lastname.upper}}</p>
+    <p class=""><strong>Correo electrónico:</strong> {{user.email.upper}}</p>
+    </div>
+</div>
+{% endblock %}

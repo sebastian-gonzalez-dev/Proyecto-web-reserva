@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+ {% load static %}
+{% block content %}
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/capi.jpg' %}" alt="capibara" class="bd-placeholder-img" width="100%" height="100%">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">-->
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Titulo de ejemplo</h1>
+              <p class="opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aliquam totam eos ad laboriosam voluptas aliquid quo est mollitia officia. Neque ad, obcaecati sed recusandae labore laboriosam aut. Ratione, ipsum?</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Botón</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/capi.jpg' %}" alt="capibara" class="bd-placeholder-img" width="100%" height="100%">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Otro titulo de ejemplo</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eum modi doloribus nihil. Minus molestiae doloribus nam, officiis voluptatum harum eligendi cumque ex debitis beatae perferendis odit architecto rem repudiandae.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Botón</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'img/capi.jpg' %}" alt="capibara" class="bd-placeholder-img" width="100%" height="100%">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Otro titulo de ejemplo</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores provident, doloremque sit doloribus molestias voluptatem, vero dolore officiis cum tenetur cupiditate iure debitis, vitae possimus adipisci laudantium consequatur delectus totam.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Galeria fotos</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static 'img/capibara.jpg' %}" alt="capibara" class="bd-placeholder-img rounded-circle" width="200" height="40%">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Titulo</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aut sunt accusantium. Quis amet totam corporis enim ipsum modi ex eum eaque voluptatem. Praesentium rem commodi, distinctio ipsum quidem eveniet.</p>
+          <p><a class="btn btn-secondary" href="#">Más detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/capibara.jpg' %}" alt="capibara" class="bd-placeholder-img rounded-circle" width="200" height="40%">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Titulo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam fugiat dolore, illum veritatis itaque maiores autem! Maxime quam iste numquam ipsum suscipit quaerat maiores molestias, ratione vel repellendus voluptates!
+          </p>
+          <p><a class="btn btn-secondary" href="#">Más detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/capibara.jpg' %}" alt="capibara" class="bd-placeholder-img rounded-circle" width="200" height="40%">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg>
+          <h2 class="fw-normal">Titulo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eos sed natus vero porro corporis rerum consectetur similique, ea voluptates. Culpa sunt vero vel debitis quia voluptas atque exercitationem incidunt?</p>
+          <p><a class="btn btn-secondary" href="#">Más detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Titulo de ejemplo</h2>
+          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quo, accusantium eaque provident a, voluptas sit impedit omnis aperiam, eum dolorem amet cumque quam. Dolore ullam inventore labore architecto sed.</p>
+        </div>
+        <div class="col-md-5"> 
+          <img src="{% static '/img/capibara.jpg' %}" alt="capibara" width="300" height="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Titulo de ejemplo</h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nemo consequuntur ipsam doloremque consectetur! Nostrum iste quae nesciunt! Nobis commodi eligendi totam, suscipit mollitia odit non voluptates quas quidem necessitatibus?</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="{% static '/img/capibara.jpg' %}" alt="capibara" width="300" height="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Titulo de ejemplo</h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nobis blanditiis voluptatem minima maxime quis doloremque numquam perspiciatis ut natus, reiciendis tempore eligendi eaque minus voluptatum veritatis dicta fugiat rerum!</p>
+        </div>
+        <div class="col-md-5">
+          <img src="{% static '/img/capibara.jpg' %}" alt="capibara" width="300" height="300">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Arriba</a></p>
+      <p> DAEM CHILLÁN 2024  &middot; <a href="#">Enlace</a> &middot; <a href="#">Enlace</a></p>
+      <img src="{% static '/img/logoDaem.png' %}" alt="logo-daem" width="60" height="50">
+    </footer>
+
+{% endblock %}
